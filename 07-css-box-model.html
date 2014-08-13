@@ -42,10 +42,12 @@
 			<div class="slides">
 				<section class="small">
 					<h1 class="opening special-margin">The CSS box model</h1>
+					<!--
 					<div class="small-logo-container disappear">
 						<img src="images/basic-logo-tan-bg.png"/>
 						<div class="copyright">&copy; <span>2013</span></div>
 					</div>
+					-->
 					<div class="notes">
 						<p>
 							As you've begun to style CSS, you've probably wanted to do things like add borders, or spacing, or drop shadows, around your paragraphs and headlines. That's done through what's called the box model. 
@@ -56,23 +58,16 @@
 					</div>
 				</section>
 
+				<!--
 				<section>
 					<h2 class="vertical-center">What the Box Model can do</h2>
 					<h3 style="margin-top:20px;"><a href="http://www.grantland.com/story/_/id/9175394/out-great-alone">Out in the Great Alone</a></h3>
 				</section>
+				-->
 
 				<section>
-					
-					<div class="stack" style="width: 700px">
-						
-						<div class="layer">
-							<img src="images/presentations/box-model/basic.png" alt="">
-						</div>
-						<div class="layer fragment">
-							<img src="images/presentations/box-model/annotated.png" alt="">
-						</div>
-					</div>
-
+						<h2>All HTML elements can be considered boxes</h2>
+						<img src="images/box-model.png" alt="">
 				</section>
 
 				<section>
@@ -120,11 +115,11 @@
 
 				<section>
 					<div style="float:left; margin-top:5%;">
-						<p style="border:100px solid #d8d4af; width: 250px;">Sometimes, I'd like my text to have a big old border.</p>
+						<p style="border:100px solid #d8d4af; width: 250px;">BIG BORDERS</p>
 						<p class="fragment" style="margin-top:20px; font-size:30px; color: #919191;">border: <strong style="color:black;">100px</strong> solid #d8d4af;</p>
 					</div>
 					<div style="margin:15% 0 0 30px; float:left;">
-						<p style="border:10px solid #d8d4af; width: 400px; ">Other times I want to tone it down.</p>
+						<p style="border:10px solid #d8d4af; width: 400px; ">thinner borders</p>
 						<p class="fragment" style="margin-top:20px; font-size:30px; color: #919191;">border: <strong style="color:black;">10px</strong> solid #d8d4af;</p>
 					</div>
 
@@ -135,10 +130,10 @@
 
 				<section class="border-options">
 					<div style="float:left; margin-left:15%;">
-						<p style="border:10px solid #d8d4af; width: 250px;">Most of the time I'm solid.</p>
-						<p style="border:10px dashed #d8d4af; width: 250px;">On occassion I want to look like a coupon.</p>
-						<p style="border:10px groove #d8d4af; width: 250px;">Most of these are out of style.</p>
-						<p style="border:10px inset #d8d4af; width: 250px;">But you can tell I've got options.</p>
+						<p style="border:10px solid #d8d4af; width: 250px;">Solid borders are good</p>
+						<p style="border:10px dashed #d8d4af; width: 250px;">Coupon-looking is acceptable</p>
+						<p style="border:10px groove #d8d4af; width: 250px;">This is out of style</p>
+						<p style="border:10px inset #d8d4af; width: 250px;">Avoid this like the plague</p>
 					</div>
 					<div style="float:left; font-size: 25px; margin-left: 30px; text-align:left;">
 						<p style="height: 76px; padding-top:30px; color: #919191;">border:10px <strong style="color:black;">solid </strong>#d8d4af;</p>
@@ -168,9 +163,9 @@
 
 				<section>
 					<div style="margin:20% 0 0 0; float:right;">
-						<p style="border:10px solid #00b29e; width: 300px; padding: 10px; font-size: 28px;">Hi Dad. <br/>Can you uh, not hug me every time you see me?</p>
+						<p style="border:10px solid #00b29e; width: 300px; padding: 10px; font-size: 28px;">Yo.</p>
 					</div>
-					<p style="border:10px solid #d8d4af; width: 350px; margin-top:20%; padding: 50px; float:right;">Oh look! <br/>It's my daughter Sisi!</p>
+					<p style="border:10px solid #d8d4af; width: 350px; margin-top:20%; padding: 50px; float:right;">Yo.</p>
 				</section>
 
 				<section>
@@ -179,47 +174,53 @@
 				</section>
 
 				<section>
-					<p style="border:10px solid #00b29e; width: 300px; margin-top:20%; padding: 10px; float:right;">Listen, you just gotta move over.</p>
-					<p style="background-color: white; width: 80px; margin-top:20%; float:right; height: 127px;"></p>
-					<p style="border:10px solid #d8d4af; width: 400px; margin-top:20%; padding: 50px; float:right;">Wait a second...</p>
+					<p style="border:10px solid #00b29e; width: 300px; margin-top:20%; padding: 10px; float:right;">Yo.</p>
+					<p style="background-color: white; width: 80px; margin-top:20%; float:right; height: 205px;"></p>
+					<p style="border:10px solid #d8d4af; width: 400px; margin-top:20%; padding: 50px; float:right;">Yo.<br/>margin-right:80px;</p>
 					<div class="clear"></div>
-					<p style="margin-top: 50px;">(Sisi used her power "margin-left:80px"!)</p>
 				</section>
 
+				<!--
 				<section>
 					<center>
-						<p style="border:10px solid #d8d4af; width: 400px; padding: 30px; margin:10% 0 0 0;">Hi Sisi!</p>
+						<p style="border:10px solid #d8d4af; width: 400px; padding: 30px; margin:10% 0 0 0;">Yo.</p>
 						<div>
-							<p style="border:10px solid #d8d4af; width: 155px; padding: 30px; float:left; margin:0px;">Hi Sisi!</p>
-							<p style="border:10px solid #00b29e; width: 400px; padding: 30px; float:left; margin:0px;">Oh no, family reunion.</p>
-							<p style="border:10px solid #d8d4af; width: 155px; padding: 30px; float:left; margin:0px;">Hi Sisi!</p>
+							<p style="border:10px solid #d8d4af; width: 155px; padding: 30px; float:left; margin:0px;">Yo.</p>
+							<p style="border:10px solid #00b29e; width: 400px; padding: 30px; float:left; margin:0px;">Yo too close!</p>
+							<p style="border:10px solid #d8d4af; width: 155px; padding: 30px; float:left; margin:0px;">Yo.</p>
 						</div>
 						<div class="clear"></div>
-						<p style="border:10px solid #d8d4af; width: 400px; padding: 30px; margin:0px;">Hi Sisi!</p>
+
 						
-						<p style="margin-top: 50px;">(What should I do?)</p>
+						<p style="margin-top: 50px;">(What should we do?)</p>
 					</center>
 				</section>
+				-->
 
+				<!--
 				<section>
 					<center>
-						<p style="border:10px solid #d8d4af; width: 400px; padding: 30px; margin:0px;">Hi Sisi!</p>
+						<p style="border:10px solid #d8d4af; width: 400px; padding: 30px; margin:0px;">Yo.</p>
 						<p style="background-color: white; width: 480px; height: 50px; margin:0px;"></p>
 						<div>
-							<p style="border:10px solid #d8d4af; width: 125px; padding: 30px 20px; float:left; margin:0px;">Hi Sisi!</p>
+							<p style="border:10px solid #d8d4af; width: 125px; padding: 30px 20px; float:left; margin:0px;">Yo.</p>
 							<p style="background-color: white; width: 50px; height: 122px; margin:0px; float:left;"></p>
 							<p style="border:10px solid #00b29e; width: 400px; padding: 30px; float:left; margin:0px;">Margin power!</p>
 							<p style="background-color: white; width: 50px; height: 122px; margin:0px; float:left;"></p>
-							<p style="border:10px solid #d8d4af; width: 125px; padding: 30px 20px; float:left; margin:0px;">Hi Sisi!</p>
+							<p style="border:10px solid #d8d4af; width: 125px; padding: 30px 20px; float:left; margin:0px;">Yo.</p>
+
 						</div>
 						<div class="clear"></div>
+
 						<p style="background-color: white; width: 480px; height: 50px; margin:0px;"></p>
-						<p style="border:10px solid #d8d4af; width: 400px; padding: 30px; margin:0px;">Hi Sisi!</p>
 						
+						<p style="border:10px solid #d8d4af; width: 400px; padding: 30px; margin:0px;">Yo.</p>
+					
 						<p style="margin-top: 50px;">margin: 50px;</p>
 					</center>
 				</section>
-
+				-->
+				<!--
 				<section class="small">
 					<center>
 						<p style="border:10px solid #d8d4af; width: 400px; padding: 30px; margin:0 0 50px 0;">Hi Sisi!</p>
@@ -238,6 +239,7 @@
 						<p>But margins don't have color, so in reality it looks like this. Okay, so let's review.</p>
 					</div>
 				</section>
+				-->
 
 				<section>
 					<h2>Width, margin, border, padding</h2>
@@ -353,13 +355,11 @@
 				</section>
 		
 				<section>
-					<h2>With your mentor</h2>
+					<h2>Exercise:</h2>
 					<ul class="presentation-7">
 						<li>Think you understand how the box model works? Let's see if you're ready to be <a href="http://codewithme.us/exercises/box-model-ninja.html">A BOX MODEL NINJA!</a></li>
+						<li>Center your text and include captions beneath photos</li>
 						<li>Practice <a href="http://codewithme.us/portland/exercises.html#lesson-7">the box model</a> by trying out margin, padding, width, border and background-color in your practice file. </li>
-						<li><strong>Do exercise #7</strong>: <a href="http://codewithme.us/portland/exercises.html#exercise-7">Design it Twitter-style, part two</a>. </li> 
-						</li>
-						<li>Work on your project.</li>
 					</ul>	
 				</section>
 				
